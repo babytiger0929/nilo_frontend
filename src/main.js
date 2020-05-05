@@ -4,6 +4,7 @@ import router from './router'
 
 import firebase from 'firebase';
 import BootstrapVue from 'bootstrap-vue';
+import './styles/global.scss';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';

@@ -10,11 +10,10 @@
                             <input type="text" name="email" placeholder="E-mail address" v-model="email" />
                         </div>
                     </div>
-                    <div class="red column"><small>asdf</small></div>
                     <div class="field">
                         <div class="ui left icon input large">
                             <i class="lock icon"></i>
-                            <input type="password" name="password" placeholder="Password" v-model="password" />
+                            <input type="password" name="password" placeholder="Password" autocomplete="off" v-model="password" />
                         </div>
                     </div>
                     <div class="ui fluid large pink submit button" @click="registerButtonPressed">Register</div>
@@ -37,6 +36,9 @@
                 password: ""
             };
         },
+        mounted() {
+            // this.hideLoader();
+        },
         methods: {
             async registerButtonPressed() {
                 try {
@@ -58,5 +60,4 @@
             }
         }
     };
-
 </script>

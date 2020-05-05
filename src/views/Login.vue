@@ -22,6 +22,7 @@
                                     name="password"
                                     placeholder="Password"
                                     v-model="password"
+                                    autocomplete="off"
                             />
                         </div>
                     </div>
@@ -52,7 +53,6 @@
                 password: ""
             };
         },
-
         methods: {
             async loginButtonPressed() {
                 if (this.email === '' || this.password === '') {

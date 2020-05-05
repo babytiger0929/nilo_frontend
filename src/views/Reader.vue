@@ -10,7 +10,7 @@
         <div>
             <p>{{error}}</p>
         </div>
-        <div>
+        <div class="ui container">
             <h1>Articles</h1>
             <table class="ui celled table">
                 <tr v-for="article in articles" :key="article.id">
